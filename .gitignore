@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+server/public/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+cookies.txt
+.data/
+data/
+
+# Backups (runtime data, never commit)
+backups/
+*.tar.gz
+*.zip
+
+# IDE / editors
+.vscode/
+.idea/
+.cursor/
+.claude/
+.remember/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vite / TS build cache
+vite.config.ts.*
+*.tsbuildinfo
+
+# Replit-specific
+.replit
+replit.nix

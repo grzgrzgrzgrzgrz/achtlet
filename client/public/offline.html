@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Achtlet</title>
+  <style>
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #fff7f2 46%, #eef6ff 100%);
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(203, 213, 225, 0.9);
+      border-radius: 28px;
+      padding: 40px;
+      box-shadow: 0 28px 50px -36px rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(14px);
+    }
+
+    h1 {
+      color: #c84d2d;
+      margin-top: 0;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #c84d2d;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .button:hover {
+      background-color: #b44528;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <svg class="icon" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="512" height="512" rx="80" fill="#C84D2D"/>
+      <path d="M165 184V328H138V184H165ZM195 184H222V239H277V184H304V328H277V266H222V328H195V184ZM374 184V239H347V184H320V328H347V266H374V328H401V184H374Z" fill="white"/>
+    </svg>
+
+    <h1>You're Offline</h1>
+
+    <div class="message">
+      <p>The installed Achtlet app shell is available, but live n8n data still requires a network connection.</p>
+      <p>Reconnect and try again to refresh workflows, executions, and backups.</p>
+    </div>
+
+    <a class="button" href="/">Try Again</a>
+
+    <div class="footer">
+      Achtlet PWA
+    </div>
+  </div>
+</body>
+</html>

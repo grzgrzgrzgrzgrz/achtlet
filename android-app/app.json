@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Achtlet",
+    "slug": "achtlet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/achtlet_logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/achtlet_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/achtlet_logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.grz.achtlet"
+    },
+    "web": {
+      "favicon": "./assets/achtlet_logo.png"
+    }
+  }
+}

@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 35% 98%;
+  --foreground: 222 29% 14%;
+  --muted: 214 28% 94%;
+  --muted-foreground: 220 13% 39%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 29% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 29% 14%;
+  --border: 214 20% 84%;
+  --input: 214 20% 84%;
+  --primary: 162 44% 21%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 14 86% 58%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 38 72% 94%;
+  --accent-foreground: 222 29% 14%;
+  --destructive: 3 72% 46%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 162 44% 21%;
+  --radius: 0.5rem;
+  --bg-light: 210 42% 98%;
+  --text-dark: 222 29% 16%;
+  --success-green: 162 63% 30%;
+  --error-red: 4 72% 45%;
+  --border-light: 214 20% 82%;
+  --active-color: 162 58% 30%;
+  --inactive-color: 216 12% 62%;
+  --highlight-color: 162 44% 21%;
+}
+
+.dark {
+  --background: 222 22% 12%;
+  --foreground: 34 38% 96%;
+  --muted: 220 16% 18%;
+  --muted-foreground: 220 10% 72%;
+  --popover: 222 22% 12%;
+  --popover-foreground: 34 38% 96%;
+  --card: 222 20% 15%;
+  --card-foreground: 34 38% 96%;
+  --border: 220 14% 24%;
+  --input: 220 14% 24%;
+  --primary: 162 42% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 14 86% 62%;
+  --secondary-foreground: 222 22% 12%;
+  --accent: 223 16% 21%;
+  --accent-foreground: 34 38% 96%;
+  --destructive: 2 72% 56%;
+  --destructive-foreground: 34 38% 96%;
+  --ring: 162 38% 72%;
+  --radius: 0.5rem;
+  --bg-light: 222 20% 14%;
+  --text-dark: 34 38% 96%;
+  --success-green: 162 55% 52%;
+  --error-red: 2 72% 56%;
+  --border-light: 220 14% 28%;
+  --active-color: 162 55% 52%;
+  --inactive-color: 220 10% 42%;
+  --highlight-color: 162 38% 72%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    @apply antialiased text-[hsl(var(--text-dark))];
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100%;
+    background: linear-gradient(135deg, #f8fafc 0%, #fff7f2 46%, #eef6ff 100%);
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: hsla(12, 74%, 50%, 0.18);
+  }
+}
+
+@layer components {
+  .screen-shell {
+    @apply min-h-screen px-4 py-6 sm:px-6 lg:px-8;
+  }
+
+  .screen-frame {
+    @apply mx-auto w-full max-w-6xl;
+  }
+
+  .surface-panel {
+    background: hsla(0, 0%, 100%, 0.72);
+    border: 1px solid hsla(214, 20%, 84%, 0.9);
+    box-shadow: 0 18px 40px -30px rgba(15, 23, 42, 0.38);
+    backdrop-filter: blur(18px);
+    @apply rounded-[1.75rem];
+  }
+
+  .surface-panel-strong {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.8)),
+      linear-gradient(135deg, rgba(241, 90, 59, 0.08), rgba(23, 54, 45, 0.1));
+    border: 1px solid hsla(214, 20%, 84%, 0.92);
+    box-shadow: 0 24px 50px -34px rgba(15, 23, 42, 0.48);
+    backdrop-filter: blur(22px);
+    @apply rounded-[2rem];
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em];
+    color: hsl(var(--highlight-color));
+  }
+
+  .metric-card {
+    @apply rounded-[1.6rem] border border-[hsl(var(--border))] bg-white/75 p-4 shadow-[0_18px_38px_-32px_rgba(15,23,42,0.32)];
+  }
+
+  .metric-label {
+    @apply text-[11px] font-bold uppercase tracking-[0.18em] text-[hsl(var(--muted-foreground))];
+  }
+
+  .metric-value {
+    @apply mt-3 text-3xl font-extrabold tracking-tight text-[hsl(var(--text-dark))];
+  }
+
+  .status-pill {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em];
+  }
+
+  .sticky-install {
+    @apply sticky bottom-4 z-30;
+  }
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @apply bg-[hsl(var(--inactive-color))];
+  transition: .2s;
+  border-radius: 22px;
+  box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.12);
+}
+
+.toggle-slider:after {
+  content: "OFF";
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  font-size: 8px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .2s;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+}
+
+input:checked + .toggle-slider {
+  @apply bg-[hsl(var(--success-green))];
+}
+
+input:checked + .toggle-slider:after {
+  content: "ON";
+  left: 8px;
+  right: auto;
+}
+
+input:focus + .toggle-slider {
+  box-shadow: 0 0 0 2px hsl(var(--highlight-color));
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(20px);
+}
+
+input:disabled + .toggle-slider {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input:disabled + .toggle-slider:before {
+  background-color: #f0f0f0;
+}
+
+@media (hover: none) {
+  .toggle-slider {
+    cursor: default;
+  }
+
+  .toggle-switch {
+    padding: 6px;
+    margin: -6px;
+  }
+}
+
+@media (display-mode: standalone) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .toggle-switch {
+    min-width: 50px;
+    min-height: 30px;
+  }
+
+  .space-y-2 > * + * {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .flex.gap-3 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .flex.gap-3 button {
+    width: 100%;
+  }
+
+  header .flex.justify-between {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in,
+.rise-in {
+  animation: rise-in 240ms ease-out;
+}

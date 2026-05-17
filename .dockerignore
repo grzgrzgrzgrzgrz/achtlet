@@ -1,0 +1,55 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Git
+.git
+.gitignore
+
+# IDE/Editor
+.cursor
+.vscode
+.idea
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Development files
+.replit
+replit.nix
+
+# Mobile app (not needed for web deployment)
+android-app
+
+# Documentation screenshots are not needed inside the Docker build context
+docs
+
+# Backups (should be mounted as volume)
+backups
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (optional)
+*.md
+!README.md
+
+# Test files
+*.test.ts
+*.spec.ts
+__tests__
+
+# Archives
+*.tar.gz
+*.zip

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Achtlet small app icon</title>
+  <desc id="desc">A simplified figure-eight latch mark for small launcher sizes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="32" y1="18" x2="164" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18392F"/>
+      <stop offset="1" stop-color="#0E1B18"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="54" y1="28" x2="142" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8EA"/>
+      <stop offset="1" stop-color="#EAE0CF"/>
+    </linearGradient>
+    <linearGradient id="latch" x1="70" y1="92" x2="124" y2="106" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB86B"/>
+      <stop offset="1" stop-color="#F15A3B"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="44" fill="url(#bg)"/>
+  <path d="M32 132C20 103 26 72 46 50" stroke="#F15A3B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="150" cy="43" r="7" fill="#FFB86B"/>
+  <circle cx="41" cy="150" r="5" fill="#FFF8EA" opacity="0.85"/>
+  <circle cx="96" cy="65" r="36" fill="url(#paper)"/>
+  <circle cx="96" cy="127" r="36" fill="url(#paper)"/>
+  <circle cx="96" cy="65" r="16" fill="#17362D"/>
+  <circle cx="96" cy="127" r="16" fill="#17362D"/>
+  <rect x="84" y="84" width="24" height="24" rx="10" fill="url(#paper)"/>
+  <circle cx="96" cy="96" r="8" fill="#17362D"/>
+  <path d="M72 96H120" stroke="url(#latch)" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="120" cy="96" r="12" fill="#FFF8EA"/>
+  <circle cx="120" cy="96" r="6" fill="#F15A3B"/>
+</svg>

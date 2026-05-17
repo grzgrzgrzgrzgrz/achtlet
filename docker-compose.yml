@@ -1,0 +1,46 @@
+# Achtlet - docker compose
+#
+# Copy .env.example to .env and set APP_PASSWORD and SESSION_SECRET before
+# running `docker compose up`. The compose file intentionally has no fallback
+# defaults for secrets; the container will refuse to start without them.
+
+services:
+  achtlet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: achtlet
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - APP_PASSWORD=${APP_PASSWORD:?APP_PASSWORD must be set in .env}
+      - SESSION_SECRET=${SESSION_SECRET:?SESSION_SECRET must be set in .env (>=32 chars)}
+      - N8N_URL=${N8N_URL:-}
+      - N8N_API_KEY=${N8N_API_KEY:-}
+      - DATA_DIR=/app/data
+      - TZ=${TZ:-UTC}
+      - BACKUP_KEEP_LAST=${BACKUP_KEEP_LAST:-10}
+    volumes:
+      - achtlet_backups:/app/backups
+      - achtlet_data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  achtlet_backups:
+    driver: local
+  achtlet_data:
+    driver: local

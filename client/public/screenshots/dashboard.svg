@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F8F9FA"/>
+  
+  <!-- Header -->
+  <rect width="1280" height="64" fill="#FF6B6B"/>
+  <text x="24" y="40" font-family="Arial" font-size="24" font-weight="bold" fill="white">Achtlet</text>
+  
+  <!-- Container -->
+  <rect x="16" y="80" width="1248" height="624" rx="8" fill="white"/>
+  
+  <!-- Workflow Cards -->
+  <!-- Card 1 -->
+  <rect x="32" y="112" width="380" height="160" rx="8" fill="white" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="48" y="144" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Welcome Email Sequence</text>
+  <text x="48" y="168" font-family="Arial" font-size="14" fill="#6C757D">Sends welcome emails to new users</text>
+  <!-- Status indicator -->
+  <circle cx="356" cy="144" r="16" fill="#51CF66"/>
+  <!-- Time -->
+  <text x="48" y="240" font-family="Arial" font-size="12" fill="#ADB5BD">Updated 2 hours ago</text>
+  
+  <!-- Card 2 -->
+  <rect x="432" y="112" width="380" height="160" rx="8" fill="white" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="448" y="144" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Lead Scoring</text>
+  <text x="448" y="168" font-family="Arial" font-size="14" fill="#6C757D">Assigns scores to leads based on activity</text>
+  <!-- Status indicator -->
+  <circle cx="756" cy="144" r="16" fill="#ADB5BD"/>
+  <!-- Time -->
+  <text x="448" y="240" font-family="Arial" font-size="12" fill="#ADB5BD">Updated 1 day ago</text>
+  
+  <!-- Card 3 -->
+  <rect x="832" y="112" width="380" height="160" rx="8" fill="white" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="848" y="144" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Order Processing</text>
+  <text x="848" y="168" font-family="Arial" font-size="14" fill="#6C757D">Handles order status updates</text>
+  <!-- Status indicator -->
+  <circle cx="1156" cy="144" r="16" fill="#51CF66"/>
+  <!-- Time -->
+  <text x="848" y="240" font-family="Arial" font-size="12" fill="#ADB5BD">Updated 5 hours ago</text>
+  
+  <!-- Card 4 -->
+  <rect x="32" y="292" width="380" height="160" rx="8" fill="white" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="48" y="324" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Weekly Report</text>
+  <text x="48" y="348" font-family="Arial" font-size="14" fill="#6C757D">Sends weekly sales reports to admin</text>
+  <!-- Status indicator -->
+  <circle cx="356" cy="324" r="16" fill="#51CF66"/>
+  <!-- Time -->
+  <text x="48" y="420" font-family="Arial" font-size="12" fill="#ADB5BD">Updated 3 days ago</text>
+  
+  <!-- Card 5 -->
+  <rect x="432" y="292" width="380" height="160" rx="8" fill="white" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="448" y="324" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Customer Survey</text>
+  <text x="448" y="348" font-family="Arial" font-size="14" fill="#6C757D">Collects customer feedback</text>
+  <!-- Status indicator -->
+  <circle cx="756" cy="324" r="16" fill="#ADB5BD"/>
+  <!-- Time -->
+  <text x="448" y="420" font-family="Arial" font-size="12" fill="#ADB5BD">Updated 1 week ago</text>
+  
+  <!-- Card 6 -->
+  <rect x="832" y="292" width="380" height="160" rx="8" fill="white" stroke="#E9ECEF" stroke-width="1"/>
+  <text x="848" y="324" font-family="Arial" font-size="20" font-weight="bold" fill="#212529">Inventory Monitor</text>
+  <text x="848" y="348" font-family="Arial" font-size="14" fill="#6C757D">Alerts when inventory is low</text>
+  <!-- Status indicator -->
+  <circle cx="1156" cy="324" r="16" fill="#51CF66"/>
+  <!-- Time -->
+  <text x="848" y="420" font-family="Arial" font-size="12" fill="#ADB5BD">Updated today</text>
+  
+  <!-- Sort controls -->
+  <rect x="32" y="480" width="380" height="40" rx="4" fill="#F1F3F5"/>
+  <text x="48" y="505" font-family="Arial" font-size="14" font-weight="bold" fill="#495057">Sort by: Last Updated</text>
+  
+  <!-- Filter controls -->
+  <rect x="432" y="480" width="380" height="40" rx="4" fill="#F1F3F5"/>
+  <text x="448" y="505" font-family="Arial" font-size="14" font-weight="bold" fill="#495057">Filter: All Workflows</text>
+</svg>
