@@ -1,5 +1,5 @@
 # Build stage
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM node:20-alpine AS production
+FROM node:24-alpine AS production
 
 LABEL org.opencontainers.image.title="Achtlet" \
       org.opencontainers.image.description="Installable Android-first PWA for n8n workflow control, executions, and backups." \

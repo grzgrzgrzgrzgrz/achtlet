@@ -67,7 +67,7 @@ android-app/  Archived Expo prototype, not the release target
 
 ## Requirements
 
-- Node.js 20+
+- Node.js 24+
 - npm 10+
 - A reachable n8n instance with a valid API key
 - Optional: Docker Desktop / Docker 24+ for container deployment
