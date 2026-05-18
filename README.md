@@ -21,13 +21,35 @@ check status without opening the full n8n editor.
 
 ## Screenshots
 
-| Login | Connected dashboard |
-| :---: | :---: |
-| ![Login](docs/screenshots/01-login.png) | ![Connected dashboard](docs/screenshots/02-dashboard.png) |
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <strong>Login</strong><br>
+      <img src="docs/screenshots/readme/01-login.png" alt="Achtlet login screen" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <strong>Connected dashboard</strong><br>
+      <img src="docs/screenshots/readme/02-dashboard.png" alt="Achtlet connected dashboard" width="100%">
+    </td>
+  </tr>
+</table>
 
-| Executions | Backups | Mobile workflow controls |
-| :---: | :---: | :---: |
-| ![Executions](docs/screenshots/03-executions.png) | ![Backups](docs/screenshots/04-backups.png) | ![Mobile workflow controls](docs/screenshots/05-mobile-dashboard.png) |
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <strong>Executions</strong><br>
+      <img src="docs/screenshots/readme/03-executions.png" alt="Achtlet executions screen" width="100%">
+    </td>
+    <td width="33%" align="center" valign="top">
+      <strong>Backups</strong><br>
+      <img src="docs/screenshots/readme/04-backups.png" alt="Achtlet backups screen" width="100%">
+    </td>
+    <td width="33%" align="center" valign="top">
+      <strong>Mobile workflow controls</strong><br>
+      <img src="docs/screenshots/readme/05-mobile-dashboard.png" alt="Achtlet mobile workflow controls" width="100%">
+    </td>
+  </tr>
+</table>
 
 ## Features
 
