@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Achtlet launch card</title>
+  <desc id="desc">A launch card for Achtlet, an unofficial self-hosted mobile PWA for n8n workflow control and backups.</desc>
+  <defs>
+    <linearGradient id="bg" x1="110" y1="50" x2="1120" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18392F"/>
+      <stop offset="0.58" stop-color="#102A22"/>
+      <stop offset="1" stop-color="#0B1714"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="118" y1="94" x2="386" y2="508" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8EA"/>
+      <stop offset="1" stop-color="#EAE0CF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="196" y1="282" x2="366" y2="326" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB86B"/>
+      <stop offset="1" stop-color="#F15A3B"/>
+    </linearGradient>
+    <filter id="shadow" x="60" y="44" width="430" height="540" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#04100D" flood-opacity="0.36"/>
+    </filter>
+    <filter id="phoneShadow" x="858" y="58" width="290" height="548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#04100D" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" rx="46" fill="url(#bg)"/>
+  <path d="M62 196C142 74 284 32 421 76C540 114 632 204 706 318C781 432 895 507 1035 496" stroke="#285445" stroke-width="18" stroke-linecap="round" opacity="0.48"/>
+  <path d="M80 484C42 385 58 268 133 176" stroke="#F15A3B" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="1076" cy="104" r="20" fill="#FFB86B"/>
+  <circle cx="1018" cy="530" r="12" fill="#FFF8EA" opacity="0.78"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="260" cy="206" r="108" fill="url(#paper)"/>
+    <circle cx="260" cy="404" r="108" fill="url(#paper)"/>
+    <circle cx="260" cy="206" r="48" fill="#17362D"/>
+    <circle cx="260" cy="404" r="48" fill="#17362D"/>
+    <rect x="220" y="266" width="80" height="80" rx="32" fill="url(#paper)"/>
+    <circle cx="260" cy="306" r="24" fill="#17362D"/>
+    <path d="M188 306H330" stroke="url(#accent)" stroke-width="34" stroke-linecap="round"/>
+    <circle cx="330" cy="306" r="32" fill="#FFF8EA"/>
+    <circle cx="330" cy="306" r="17" fill="#F15A3B"/>
+  </g>
+
+  <g>
+    <text x="474" y="188" fill="#FFF8EA" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="90" font-weight="800">Achtlet</text>
+    <text x="480" y="248" fill="#FFB86B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">mobile n8n pocket console</text>
+    <text x="480" y="316" fill="#EAE0CF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">Workflow control,</text>
+    <text x="480" y="362" fill="#EAE0CF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">execution checks,</text>
+    <text x="480" y="408" fill="#EAE0CF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">and mobile backups.</text>
+    <text x="480" y="492" fill="#9FBCB1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="600">Unofficial · self-hosted · PWA</text>
+  </g>
+
+  <g filter="url(#phoneShadow)">
+    <rect x="904" y="86" width="206" height="424" rx="38" fill="#07130F" stroke="#285445" stroke-width="3"/>
+    <rect x="922" y="112" width="170" height="370" rx="24" fill="#FFF8EA"/>
+    <rect x="940" y="140" width="134" height="18" rx="9" fill="#17362D"/>
+    <rect x="940" y="184" width="134" height="62" rx="16" fill="#17362D"/>
+    <rect x="958" y="202" width="58" height="9" rx="4.5" fill="#FFB86B"/>
+    <rect x="958" y="224" width="88" height="8" rx="4" fill="#9FBCB1"/>
+    <rect x="940" y="266" width="134" height="48" rx="14" fill="#EAE0CF"/>
+    <circle cx="962" cy="290" r="10" fill="#1C4A3D"/>
+    <rect x="982" y="282" width="70" height="8" rx="4" fill="#17362D"/>
+    <rect x="940" y="330" width="134" height="48" rx="14" fill="#EAE0CF"/>
+    <circle cx="962" cy="354" r="10" fill="#F15A3B"/>
+    <rect x="982" y="346" width="76" height="8" rx="4" fill="#17362D"/>
+    <rect x="940" y="396" width="134" height="48" rx="14" fill="#EAE0CF"/>
+    <circle cx="962" cy="420" r="10" fill="#FFB86B"/>
+    <rect x="982" y="412" width="62" height="8" rx="4" fill="#17362D"/>
+  </g>
+</svg>

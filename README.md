@@ -1,14 +1,23 @@
 # Achtlet - mobile n8n pocket console
 
-<img src="client/public/icons/app-icon-small.svg" alt="Achtlet logo" width="96" height="96">
+<p align="center">
+  <img src="docs/social-card.svg" alt="Achtlet launch card" width="880">
+</p>
 
-An installable, Android-friendly PWA for managing a self-hosted
-[n8n](https://n8n.io) instance from your phone: toggle workflows, inspect
-executions, trigger backups, and check status without opening the full n8n
-editor.
+<p align="center">
+  <a href="https://github.com/grzgrzgrzgrzgrz/achtlet/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/grzgrzgrzgrzgrz/achtlet/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/grzgrzgrzgrzgrz/achtlet/actions/workflows/security.yml"><img alt="Security" src="https://github.com/grzgrzgrzgrzgrz/achtlet/actions/workflows/security.yml/badge.svg"></a>
+  <a href="https://github.com/grzgrzgrzgrzgrz/achtlet/releases"><img alt="Release" src="https://img.shields.io/github/v/release/grzgrzgrzgrzgrz/achtlet?label=release"></a>
+  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-17362d"></a>
+</p>
 
-> Achtlet is an independent community project and is not affiliated with n8n GmbH.
-> See [DISCLAIMER.md](./DISCLAIMER.md).
+Achtlet is an installable, Android-friendly PWA for managing a self-hosted
+[n8n](https://n8n.io) instance from your phone. It keeps the everyday mobile
+jobs close at hand: toggle workflows, inspect executions, trigger backups, and
+check status without opening the full n8n editor.
+
+> Achtlet is an independent community project and is not affiliated with,
+> endorsed by, or sponsored by n8n GmbH. See [DISCLAIMER.md](./DISCLAIMER.md).
 
 ## Screenshots
 
@@ -29,6 +38,15 @@ editor.
 - Password-gated UI with server-side sessions and no API key echo back to the browser.
 - n8n connection can be stored server-side or locked through environment variables.
 - Dockerfile and `docker-compose.yml` for one-command self-hosting.
+
+## Launch Snapshot
+
+- Public repository starts from a clean release history.
+- `v0.1.0` was checked with typecheck, tests, build, dependency audit, Docker,
+  Playwright screenshots, local n8n smoke testing, CodeQL, and secret scanning.
+- GitHub Secret Scanning, Push Protection, Dependabot, and CodeQL are enabled.
+- Major dependency upgrades are held for deliberate review after launch.
+- Share assets and launch post drafts live in [docs/release-promo.md](./docs/release-promo.md).
 
 ## Architecture
 
@@ -141,10 +159,11 @@ Report vulnerabilities privately as described in [SECURITY.md](./SECURITY.md).
 
 ## As-Is Release Note
 
-This is community software, published as-is. I did what I could for this
-release: tests, Docker Desktop validation, local n8n integration testing,
-Playwright screenshots, dependency audit, and secret scans. Still, there is no
-warranty and no guarantee that it fits your environment.
+This is community software, published as-is. THE CODE IS PROVIDED AS IS. I did
+what I could for this release: tests, Docker Desktop validation, local n8n
+integration testing, Playwright screenshots, dependency audit, and secret scans.
+Still, there is no warranty of any kind and no guarantee that it fits your
+environment.
 
 Please review the code before trusting it with an important n8n instance. Adapt
 it with Codex, Claude, or whatever toolchain you like, but rerun the checks and
